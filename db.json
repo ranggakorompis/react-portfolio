@@ -18,5 +18,13 @@
             "title": "Rangga Aldo Korompis",
             "tagline": "Student"
         }
+    ],
+    "skills": [
+        {"skill": "HTML"},
+        {"skill": "CSS"},
+        {"skill": "Javascript"},
+        {"skill": "Bootstrap"},
+        {"skill": "React JS"},
+        {"skill": "Basic Network"}
     ]
 }
