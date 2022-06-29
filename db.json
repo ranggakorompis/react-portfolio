@@ -1,0 +1,15 @@
+{
+    "posts": [
+        {"id": 1, "title": "json-server", "author": "typicode"}
+    ],
+    "comments": [
+        {"id": 1, "body": "some comment", "postId": 1}
+    ],
+    "profile": {"name": "typicode"},
+    "about": [
+        {
+            "subtitle": "About",
+            "desc": "I'm a student at Universitas Klabat. I specialise in Web Development. I'm passionate about programming and I always striving to grow and learn something new."
+        }
+    ]
+}
