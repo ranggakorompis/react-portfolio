@@ -1,12 +1,23 @@
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+
 export default function About() {
+  const [about, setAbout] = useState([]);
+
+  useEffect(() => {
+    axios.get("http://localhost:3004/about").then((res) => setAbout(res.data));
+  }, []);
+
   return (
     <section className="about">
-      <h2 className="subtitle">About</h2>
-      <h3>
-        I'm a student at Universitas Klabat. I specialise in Web Development.
-        I'm passionate about programming and I always striving to grow and learn
-        something new.
-      </h3>
+      {about.map((item) => {
+        return (
+          <>
+            <h2 className="subtitle">{item.subtitle}</h2>
+            <h3>{item.desc}</h3>
+          </>
+        );
+      })}
     </section>
   );
 }
